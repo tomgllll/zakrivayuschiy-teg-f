@@ -360,5 +360,5 @@ dialog::backdrop {
 }
 
 .img-8 {
-  filter: hue-rotate(80deg);
+  filter: hue-rotate(80deg) sepia(10%);
 }

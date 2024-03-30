@@ -315,6 +315,7 @@ dialog::backdrop {
 .dialog__img {
   inline-size: 39px;
   block-size: 39px;
+  fill: currentColor;
 }
 
 .dialog__button {

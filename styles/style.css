@@ -251,7 +251,6 @@
   position: relative;
   z-index: 1;
   inline-size: 1.2rem;
-  fill: currentColor;
 }
 
 .footer__button {
@@ -315,7 +314,6 @@ dialog::backdrop {
 .dialog__img {
   inline-size: 39px;
   block-size: 39px;
-  fill: currentColor;
 }
 
 .dialog__button {

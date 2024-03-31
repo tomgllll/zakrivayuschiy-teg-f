@@ -266,13 +266,13 @@
 .button__img {
   position: relative;
   z-index: 1;
-  inline-size: 28px;
-  block-size: 28px;
-  fill: currentColor;
+  inline-size: 21px;
+  block-size: 21px;
+  fill: var(--accent-color);
 }
 
 .footer__button {
-  margin-block-start: 54px;
+  margin-block-start: 50px;
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   cursor: pointer;
@@ -300,6 +300,11 @@
 
   .card__content {
     padding: 20px 25px 0;
+  }
+
+  .button__img {
+    inline-size: 28px;
+    block-size: 28px;
   }
 }
 
@@ -329,7 +334,7 @@ dialog::backdrop {
   align-items: center;
 }
 
-.dialog__img {
+.dialog__img{
   fill: currentColor;
   width: 39px;
   height: 39px;

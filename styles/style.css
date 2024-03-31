@@ -329,7 +329,7 @@ dialog::backdrop {
   align-items: center;
 }
 
-.dialog__img{
+.dialog__img {
   fill: currentColor;
   width: 39px;
   height: 39px;

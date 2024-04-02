@@ -14,6 +14,7 @@
 
 */
 
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -172,6 +173,7 @@
   flex-direction: column;
   gap: 27px;
   line-height: 21px;
+  font-variation-settings: "wght" 465;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -186,7 +188,21 @@
   cursor: pointer;
   inline-size: 39px;
   block-size: 39px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.like-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 .card__like-button {
   background-color: transparent;
@@ -200,15 +216,6 @@
   position: relative;
 }
 
-.button__text {
-  font-family: var(--accent-font-family), fantasy;
-  font-size: 14px;
-  line-height: 90%;
-  font-weight: 400;
-  position: relative;
-  color: var(--accent-color);
-}
-
 .footer__button:focus, .card__like-button:focus, .dialog__button:focus {
   outline: none;
 }
@@ -217,6 +224,15 @@
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
   transition: box-shadow 0.3s;
+}
+
+.button__text {
+  font-family: var(--accent-font-family), fantasy;
+  font-size: 14px;
+  line-height: 90%;
+  font-weight: 400;
+  position: relative;
+  color: var(--accent-color);
 }
 
 .footer__button::after, .card__like-button::after, .dialog__button::after {
@@ -238,13 +254,12 @@
 
 .footer__button:hover, .card__like-button:hover, .dialog__button:hover {
   color: var(--bg-color);
-
 }
 
 .card__footer {
   display: flex;
   justify-content: end;
-  gap: 12px;
+  gap: 6px;
   padding: 25px;
 }
 
@@ -265,10 +280,10 @@
 
 .button__img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   inline-size: 21px;
   block-size: 21px;
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .footer__button {
@@ -334,7 +349,7 @@ dialog::backdrop {
   align-items: center;
 }
 
-.dialog__img {
+.dialog__img{
   fill: currentColor;
   width: 39px;
   height: 39px;

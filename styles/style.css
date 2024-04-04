@@ -14,7 +14,6 @@
 
 */
 
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -252,8 +251,10 @@
   transform: scaleX(1);
 }
 
-.footer__button:hover, .card__like-button:hover, .dialog__button:hover {
+.card__like-button:hover, .dialog__button:hover {
   color: var(--bg-color);
+  fill: var(--bg-color);
+  z-index: 99;
 }
 
 .card__footer {
@@ -280,7 +281,6 @@
 
 .button__img {
   position: relative;
-  z-index: 2;
   inline-size: 21px;
   block-size: 21px;
   fill: currentColor;
@@ -320,6 +320,7 @@
   .button__img {
     inline-size: 28px;
     block-size: 28px;
+    transition: none;
   }
 }
 
@@ -349,7 +350,7 @@ dialog::backdrop {
   align-items: center;
 }
 
-.dialog__img {
+.dialog__img{
   fill: currentColor;
   width: 39px;
   height: 39px;
